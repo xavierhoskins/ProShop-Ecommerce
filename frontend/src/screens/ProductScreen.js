@@ -8,14 +8,12 @@ import {
   ListGroup,
   Card,
   Button,
-  ListGroupItem,
   Form,
 } from 'react-bootstrap';
 import Rating from '../components/Rating';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
 import { listProductDetails } from '../actions/productActions';
-import { productDetailsReducer } from '../reducers/productReducers';
 
 const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(1);
